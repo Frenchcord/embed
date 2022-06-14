@@ -37,6 +37,18 @@ embed.set_video(url="url de la video", width=taille, height=taille)
 ```py
 embed.set_video(url="url de la video", proxy_url="une url de proxy", width=taille, height=taille)
 ```
+# ajouter un field
+```py
+embed.add_field(nom="nom du field", valeur="Valeure du field")
+```
+## mettre un field pas en ligne
+```py
+embed.add_field(nom="nom du field", valeur="Valeure du field", inline=False)
+```
+## mettre un field en ligne (en ligne par defaut)
+```py
+embed.add_field(nom="nom du field", valeur="Valeure du field", inline=True)
+```
 # mettre un thumbnail sur un embed
 ```py
 embed.set_thumbnail(url="url du thumbnail")
