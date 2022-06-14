@@ -37,6 +37,22 @@ embed.set_video(url="url de la video", width=taille, height=taille)
 ```py
 embed.set_video(url="url de la video", proxy_url="une url de proxy", width=taille, height=taille)
 ```
+# mettre un(e) auteur sur l'embed
+```py
+embed.set_auteur(nom="nom de l'auteur")
+```
+## mettre un lien sur l'auteur
+```py
+embed.set_auteur(nom="nom de l'auteur", url="lien de l'auteur")
+```
+## mettre un lien avec un proxy sur l'auteur
+```py
+embed.set_auteur(nom="nom de l'auteur", url="lien de l'auteur", proxy_url="url d'un proxy")
+```
+## mettre une icone sur l'auteur
+```py
+embed.set_auteur(icon_url="url de l'icone")
+```
 # prendre le json de l'embed
 ```py
 embed_json = embed.json
