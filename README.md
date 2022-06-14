@@ -49,6 +49,19 @@ embed.set_thumbnail(url="url du thumbnail", proxy_url="url du proxy")
 ```py
 embed.set_thumbnail(url="url du thumbnail", width=taille, height=taille)
 ```
+# mettre un footer sur un embed
+```py
+embed.set_footer(text="texte du footer")
+```
+## mettre une icone sur le footer
+```py
+embed.set_footer(text="texte du footer", icon_url="url de l'icone du footer")
+```
+## mettre un proxy sur l'icone du footer
+```py
+embed.set_footer(text="texte du footer", icon_url="url de l'icone du footer", proxy_url="url du proxy")
+```
+
 # mettre un(e) auteur sur l'embed
 ```py
 embed.set_auteur(nom="nom de l'auteur")
