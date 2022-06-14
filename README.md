@@ -23,19 +23,19 @@ embed.set_image(url="url de la photo", proxy_url="une url de proxy", width=taill
 ```
 # mettre une video sur un embed
 ```py
-embed.set_image(url="url de la video")
+embed.set_video(url="url de la video")
 ```
 ## mettre un proxy sur la video
 ```py
-embed.set_image(url="url de la video", proxy_url="une url de proxy")
+embed.set_video(url="url de la video", proxy_url="une url de proxy")
 ```
 ## mettre une taille speifique
 ```py
-embed.set_image(url="url de la video", width=taille, height=taille)
+embed.set_video(url="url de la video", width=taille, height=taille)
 ```
 ## tout les champs
 ```py
-embed.set_image(url="url de la video", proxy_url="une url de proxy", width=taille, height=taille)
+embed.set_video(url="url de la video", proxy_url="une url de proxy", width=taille, height=taille)
 ```
 # prendre le json de l'embed
 ```py
