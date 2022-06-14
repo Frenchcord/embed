@@ -37,6 +37,18 @@ embed.set_video(url="url de la video", width=taille, height=taille)
 ```py
 embed.set_video(url="url de la video", proxy_url="une url de proxy", width=taille, height=taille)
 ```
+# mettre un thumbnail sur un embed
+```py
+embed.set_thumbnail(url="url du thumbnail")
+```
+## mettre un proxy pour l'image du thumbnail
+```py
+embed.set_thumbnail(url="url du thumbnail", proxy_url="url du proxy")
+```
+## mettre un thumbnail d'une taille precise
+```py
+embed.set_thumbnail(url="url du thumbnail", width=taille, height=taille)
+```
 # mettre un(e) auteur sur l'embed
 ```py
 embed.set_auteur(nom="nom de l'auteur")
