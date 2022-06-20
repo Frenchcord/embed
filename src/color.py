@@ -80,5 +80,6 @@ def color_valide(couleur: int):
 
 def random_liste(len_list: int):
   listee: list = []
-  for i in range(len_list): listee.append(colorlist[randint(0, len(colorlist))])
+  max: int = len(colorlist)
+  for i in range(len_list): listee.append(colorlist[randint(0, max)])
   return listee
