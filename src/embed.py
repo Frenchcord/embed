@@ -11,24 +11,19 @@ class Embed:
 
   def set_titre(self, titre: str):
     self.json['title']: str = titre
-    return
 
   def set_title(self, title: str):
     self.json['title']: str = title
-    return
 
   def set_description(self, description: str):
     self.json['description']: str = description
-    return
 
   def set_couleur(self, couleur):
     if couleur not in colorlist: raise ValueError(f'{couleur} est une couleure invalide voici une liste de couleurs valides.' + '\n'.join(colorlist))
     self.json['color'] = couleur
-    return
 
   def set_color(self, color):
     self.json['color'] = color
-    return
 
   def set_image(self, url: str = None, *, proxy_url: str = None, height: int = None, width: int = None):
     if url is None and proxy_url is None and height is None and width is None: return UselessCode()
@@ -37,7 +32,6 @@ class Embed:
     if proxy_url is not None: self.json['image']['proxy_url']: str = proxy_url
     if height is not None: self.json['image']['height']: int = height
     if width is not None: self.json['image']['width']: int = width
-    return
 
   def set_video(self, url: str = None, *, proxy_url: str = None, height: int = None, width: int = None):
     if url is None and proxy_url is None and height is None and width is None: return UselessCode()
@@ -46,7 +40,6 @@ class Embed:
     if proxy_url is not None: self.json['video']['proxy_url']: str = proxy_url
     if height is not None: self.json['video']['height']: int = height
     if width is not None: self.json['video']['width']: int = width
-    return
 
   def set_auteur(self, nom: str = None, url: str = None, icon_url: str = None, *, proxy_url: str = None):
     if url is None and proxy_url is None and url is None and icon_url is None: return UselessCode()
